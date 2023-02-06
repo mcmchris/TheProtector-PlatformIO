@@ -217,7 +217,7 @@ void loop()
 
             ei_printf("%s:\t%.5f\n", result.classification[ix].label, result.classification[ix].value);
 
-            if (result.classification[ix].value > 0.7 && result.anomaly > 0.7 && inferenceResult != result.classification[ix].label)
+            if (result.classification[ix].value > 0.7 && inferenceResult != result.classification[ix].label)
             {
               inferenceResult = result.classification[ix].label;
             }
